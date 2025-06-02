@@ -5,6 +5,7 @@ https://yoshiki-kaneko-1994.github.io/demo-site-3/
 ・HTML  
 ・CSS  
 ・JavaScript  
+・PHP(予約で使用、動作確認済み)  
 
 【特徴】  
 落ち着けるCafeをイメージしました。
