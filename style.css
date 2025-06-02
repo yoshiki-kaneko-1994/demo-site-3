@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+/* ▼ header start ▼ */
+header {
+  padding: 4rem 0;
+  background-image: url(cafe-top.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  justify-items: center;
+}
+
+header h2 {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: opacity .6s, transform .6s;
+}
+
+header h3 {
+  line-height: 1.8;
+  transition: color .6s;
+}
+
+header a {
+  all: unset;
+  display: block;
+  background: black;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 4rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+header a:hover {
+  opacity: .6;
+}
+
+header a:active {
+  opacity: .4;
+}
+
+@media (max-width: 799px) {
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  header a {
+    font-size: 1rem;
+  }
+}
+
+/* ▲ header end ▲ */
+
+/* ▼ introduction start ▼ */
+.introduction {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introduction-list {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.introduction-list:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.introduction-list img {
+  width: 50%;
+}
+
+.introduction-text {
+  width: 50%;
+  align-content: center;
+  padding: 1rem;
+}
+
+.introduction-text h3 {
+  text-align: center;
+
+}
+
+.introduction-text p {
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 799px) {
+  .introduction-list {
+    display: block;
+  }
+
+  .introduction-list img {
+    width: 100%;
+  }
+
+  .introduction-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .introduction-text h3 {
+    margin-top: 2rem;
+  }
+}
+
+/* ▲ introduction end ▲ */
+
+/* ▼ particulars start ▼ */
+.particulars {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.particulars-list {
+  padding: 2rem;
+  border: 1px solid black;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.particulars-list h3 {
+  text-align: center;
+}
+
+.particulars-list p {
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+/* ▲ particulars end ▲ */
+
+/* ▼ menu start ▼ */
+.menu {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-item {
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+}
+
+.menu-item #recommendation {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.menu-item h3 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.menu-item p {
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 799px) {
+  .menu-list {
+    display: block;
+    gap: 2rem;
+  }
+
+  .menu-item {
+    margin-top: 2rem;
+  }
+}
+
+/* ▲ menu end ▲ */
+
+/* ▼ reviews start ▼ */
+.reviews {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.reviews-item {
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: opacity .6s, transform .6s;
+}
+
+.reviews-item h3 {
+  text-align: center;
+}
+
+.reviews-item p {
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 799px) {
+  .reviews-list {
+    display: block;
+  }
+
+  .reviews-item {
+    margin-top: 2rem;
+  }
+}
+
+/* ▲ reviews end ▲ */
+
+/* ▼ information start ▼ */
+.information {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ▲ information end ▲ */
+
+/* ▼ campaign start ▼ */
+.campaign {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.campaign h3 {
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* ▲ campaign end ▲ */
+
+/* ▼ form start ▼ */
+.form {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-list {
+  margin-top: 2rem;
+}
+
+.form-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form-btn button {
+  all: unset;
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.form-btn button:hover {
+  opacity: .6;
+}
+
+.form-btn button:active {
+  opacity: .4;
+}
+
+/* ▲ form end ▲ */
+
+/* ▼ footer start ▼ */
+footer {
+  padding: 2rem 0;
+}
+
+footer h2 {
+  font-size: 2rem;
+  color: red;
+  line-height: 1.8;
+}
+
+footer h3 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer-sns {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-sns img {
+  width: 60px;
+}
+
+.footer-sns p {
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+.footer-about {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-about li {
+  margin-top: 1rem;
+}
+
+.footer-sns a:hover,
+.footer-about a:hover {
+  opacity: .6;
+}
+
+.footer-sns a:active,
+.footer-about a:active {
+  opacity: .4;
+}
+
+.footer-icon {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-icon img {
+  width: 200px;
+}
+
+.footer-icon a:hover{
+  opacity: .6;
+}
+
+.footer-icon a:active{
+  opacity: .4;
+}
+
+small {
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+@media (max-width: 799px) {
+  footer h2 {
+  font-size: 1rem;
+}
+}
+/* ▲ footer end ▲ */
