@@ -7,8 +7,8 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-/*   align-content: center; */
-  text-align: center;
+  align-content: center;
+/*   text-align: center; */
   justify-items: center;
 }
 
@@ -24,7 +24,7 @@ header h3 {
 }
 
 header a {
-/*   all: unset; */
+  all: unset;
   display: block;
   background: black;
   color: white;
